@@ -1,16 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+nav h1 {
+  color: #38bdf8;
+}
+
+nav a {
+  color: #e2e8f0;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: #94a3b8;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 50px;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  margin-top: 40px;
+}
+</style>
 </head>
-<body style="background:black;color:white;text-align:center;">
 
-  <h1>Your Name</h1>
-  <p>Welcome to my portfolio</p>
+<body>
 
+<!-- NAV -->
+<nav>
+  <h1>YourName</h1>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Hi, I'm <span>Your Name</span></h2>
+  <p>A passionate developer building clean and modern projects</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a student / developer passionate about building websites and applications.
+    I focus on clean design, performance, and user experience.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
   <h2>Projects</h2>
-  <p>Project 1</p>
-  <p>Project 2</p>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>Project 1</h3>
+      <p>Short description of your project</p>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Project 2</h3>
+      <p>Short description of your project</p>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Project 3</h3>
+      <p>Short description of your project</p>
+      <a href="#">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+  <p>GitHub: github.com/yourusername</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Your Name</p>
+</footer>
 
 </body>
 </html>
